@@ -17,6 +17,7 @@ create '/user/user01/sensor', {NAME=>'data'}, {NAME=>'alert'}, {NAME=>'stats'}
 Commands to run labs:
 
 Step 1: Checkout code on the server where MapR Client is installed & configured or on hadoop server. 
+
 git clone https://github.com/jatin7/spark-streaming-hbase-workshop.git
 
 Also, create a directory 
@@ -47,7 +48,7 @@ calculate stats for whole row
 spark-submit --class "solutions.HBaseReadRowWriteStats" sparkstreaminglab-1.0.jar
 
 launch the shell and scan for statistics
-
+hbase shell
 scan '/user/user01/sensor',  {COLUMNS=>['stats']}
 
 
