@@ -27,7 +27,8 @@ sudo mkdir -p /mapr/jatin.mapr.com/user/user01/stream/
 
 spark-submit --class "solutions.HBaseSensorStream" target/sparkstreaminglab-1.0.jar
 
-Step 3: copy the streaming data file to the stream directory
+**Step 3:** copy the streaming data file to the stream directory
+
 cp sensordata.csv  /user/user01/stream/.
 
 **Step 4:** you can scan the data written to the table, however the values in binary double are not readable from the shell
