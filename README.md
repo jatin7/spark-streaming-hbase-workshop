@@ -48,7 +48,9 @@ calculate stats for whole row
 spark-submit --class "solutions.HBaseReadRowWriteStats" sparkstreaminglab-1.0.jar
 
 launch the shell and scan for statistics
-hbase shell
+
+$hbase shell
+
 scan '/user/user01/sensor',  {COLUMNS=>['stats']}
 
 
